@@ -226,9 +226,9 @@
 						</header>
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="text" name="name" id="NAME" /></div>
+								<div class="col-8 col-12-xsmall"><input type="text" name="name" id="NAME" placeholder="NAME" /></div>
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-8 col-12-xsmall"><input type="text" name="message" id="message"/></div>
+								<div class="col-8 col-12-xsmall"><input type="text" name="message" id="message" placeholder="MESSAGE"/></div>
 								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
 							</div>
 						</form>
@@ -237,10 +237,12 @@
 			<section id="contact" class="wrapper style1 fade-up">
   <div class="inner">
     <h2>Get in touch</h2>
-    <div class="split style1">
+    
+    <!-- Flex container for parallel layout -->
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: space-between;">
       
       <!-- Contact Form -->
-      <section>
+      <div style="flex: 1; min-width: 300px;">
         <form method="post" action="#">
           <div class="fields">
             <div class="field half">
@@ -260,30 +262,39 @@
             <li><button type="submit" class="button submit">Send Message</button></li>
           </ul>
         </form>
-      </section>
+      </div>
 
       <!-- Contact Info -->
-      <section>
+      <div style="flex: 1; min-width: 300px;">
         <ul class="contact">
           <li>
             <h3>Address</h3>
             <span>
-              Autostand, South Srirampur<br>
-              Purba Barddhaman, West Bengal<br>
-              India, Pin-741316
+              Pendurthi<br>
+              Visakhapatnam,Andhra Pradesh<br>
+              India, Pin-531173
             </span>
           </li>
           <li>
             <h3>Phone</h3>
-            <a href="tel:+917001768790">+91 7001768790</a>
+            <a href="tel:+916304318968">+91 6304318968</a>
           </li>
           <li>
             <h3>Email</h3>
-            <a href="mailto:debjitsarkar.engineer@gmail.com">debjitsarkar.engineer@gmail.com</a>
+            <a href="mailto:dhanushgandepalli@gmail.com">debjitsarkar.engineer@gmail.com</a>
           </li>
-      
+          <li>
+            <h3>Social</h3>
+            <ul class="icons">
+              <li><a href="https://linkedin.com" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+              <li><a href="https://facebook.com" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+              <li><a href="https://instagram.com" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="https://twitter.com" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+            </ul>
+          </li>
         </ul>
-      </section>
+      </div>
+
     </div>
   </div>
 </section>
