@@ -220,28 +220,41 @@
 				</section>
 
 			<!-- Five -->
-			 <form method="post" action="https://docs.google.com/forms/u/0/d/1g1xzvM1JWBfEjr-LXCvunqSgzjmR4kkOj5WcZeZ7FC8/prefill">
+<!-- 
+    The action URL is now set to the Google Forms submission endpoint (formResponse).
+    The IDs are now fixed based on your example observation.
+-->
+<form method="post" action="https://docs.google.com/forms/u/0/d/1g1xzvM1JWBfEjr-LXCvunqSgzjmR4kkOj5WcZeZ7FC8/formResponse">
+    
+    <div class="row gtr-uniform gtr-50">
 
-                              <div class="row gtr-uniform gtr-50">
+        <!-- Name Field -->
+        <div class="col-8 col-12-xsmall">
+            <!-- Fixed ID for Name -->
+            <input type="text" name="entry.1107309389" id="NAME" placeholder="NAME" required />
+        </div>
 
-                               <div class="col-8 col-12-xsmall">
-                                <input type="text" name="entry.1107309389" id="NAME" placeholder="NAME" required />
-                               </div>
+        <!-- Email Field -->
+        <div class="col-8 col-12-xsmall">
+            <!-- Fixed ID for Email -->
+            <input type="email" name="entry.416567510" id="email" placeholder="Your Email Address" required />
+        </div>
 
-                                 <div class="col-8 col-12-xsmall">
-                                  <input type="email" name="entry.416567510" id="email" placeholder="Your Email Address" required />
-                                 </div>
+        <!-- Message Field -->
+        <div class="col-8 col-12-xsmall">
+            <!-- Fixed ID for Message -->
+            <input type="text" name="entry.1354871762" id="message" placeholder="MESSAGE" required />
+        </div>
 
-                                  <div class="col-8 col-12-xsmall">
-                                     <input type="text" name="entry.1354871762" id="message" placeholder="MESSAGE" required />
-                                  </div>
+        <!-- Submit Button -->
+        <div class="col-4 col-12-xsmall">
+            <!-- The submit input triggers the POST request to the Google Forms action URL -->
+            <input type="submit" value="Send Message" class="fit primary" />
+        </div>
 
-                                    <div class="col-4 col-12-xsmall">
-                                             <input type="submit" value="Get Started" class="fit primary" />
-                                      </div>
+    </div>
+</form>
 
-                                  </div>
-                             </form>
 
 			<!-- Footer -->
 				<footer id="footer">
