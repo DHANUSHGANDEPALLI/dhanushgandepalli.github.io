@@ -241,7 +241,11 @@
     The action URL is now set to the Google Forms submission endpoint (formResponse).
     The IDs are now fixed based on your example observation.
 -->
-<form method="post" action="https://docs.google.com/forms/u/0/d/1g1xzvM1JWBfEjr-LXCvunqSgzjmR4kkOj5WcZeZ7FC8/formResponse">
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<div id="success-msg" style="display:none; color:green; margin-top:10px;">
+	✓ Message sent successfully!
+</div>
+<form id="contactForm" method="post" target="hidden_iframe" action="https://docs.google.com/forms/u/0/d/1g1xzvM1JWBfEjr-LXCvunqSgzjmR4kkOj5WcZeZ7FC8/formResponse">
     
     <div class="row gtr-uniform gtr-50">
 
